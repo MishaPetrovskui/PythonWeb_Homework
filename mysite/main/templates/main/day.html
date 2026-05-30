@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>День тижня</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Сьогодні</h1>
+        <p>{{ day }}</p>
+        <nav>
+            <a href="{% url 'index' %}">Головна</a>
+            <a href="{% url 'quote' %}">Цитата</a>
+        </nav>
+    </div>
+</body>
+</html>
